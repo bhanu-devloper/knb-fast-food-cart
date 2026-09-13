@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>KDB Fast Food | Shadipur</title>
+
+    <meta
+        name="description"
+        content="KDB Fast Food - Fresh Momos, Manchurian and French Fries"
+    >
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700;800;900&family=Pacifico&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- QR Code Library -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    ></script>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     WELCOME SCREEN
+===================================================== -->
+
+<div
+    class="welcome-screen"
+    id="welcomeScreen"
+>
+
+    <div class="welcome-glow"></div>
+
+
+    <div class="welcome-box">
+
+        <div class="welcome-logo">
+
+            <img
+                src="kdb-logo.png"
+                alt="KDB Fast Food"
+            >
+
+        </div>
+
+
+        <p class="welcome-top">
+            WELCOME TO
+        </p>
+
+
+        <h1>
+            KDB
+        </h1>
+
+
+        <h2>
+            FAST FOOD
+        </h2>
+
+
+        <div class="gold-line"></div>
+
+
+        <p class="welcome-tagline">
+            Real Taste • Fresh Food • Always
+        </p>
+
+
+        <p class="welcome-location">
+            📍 Shadipur, Pandav Nagar
+        </p>
+
+
+        <button
+            class="enter-btn"
+            onclick="enterWebsite()"
+        >
+
+            ENTER MENU
+
+            <span>→</span>
+
+        </button>
+
+
+        <div class="welcome-foods">
+
+            <span>🥟 Momos</span>
+
+            <span>🍲 Manchurian</span>
+
+            <span>🍟 Fries</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a
+            href="#home"
+            class="brand"
+        >
+
+            <img
+                src="kdb-logo.png"
+                alt="KDB Logo"
+            >
+
+            <div class="brand-text">
+
+                <strong>KDB</strong>
+
+                <span>FAST FOOD</span>
+
+            </div>
+
+        </a>
+
+
+        <nav>
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#menu">
+                Menu
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button
+            class="cart-button"
+            onclick="openCart()"
+        >
+
+            🛒
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <div class="hero-content">
+
+
+        <div class="hero-badge">
+
+            🔥 FRESHLY PREPARED
+
+        </div>
+
+
+        <h1>
+
+            GOOD FOOD.
+
+            <span>
+                GOOD MOOD.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Hot momos, crispy fries and delicious
+            Indo-Chinese food prepared fresh for you.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#menu"
+                class="primary-btn"
+            >
+
+                ORDER NOW →
+
+            </a>
+
+
+            <a
+                href="tel:+919990649590"
+                class="secondary-btn"
+            >
+
+                📞 CALL US
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-features">
+
+            <div>
+
+                <strong>
+                    🥟
+                </strong>
+
+                <span>
+                    Fresh Momos
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    🔥
+                </strong>
+
+                <span>
+                    Hot & Fresh
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ❤️
+                </strong>
+
+                <span>
+                    Made With Love
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="hero-food">
+
+        <div class="food-circle">
+
+            <img
+                src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=900&q=85"
+                alt="Momos"
+            >
+
+        </div>
+
+        <div class="floating-price">
+
+            <small>
+                FROM
+            </small>
+
+            ₹80
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<section
+    class="menu-section"
+    id="menu"
+>
+
+
+    <div class="section-title">
+
+        <div>
+
+            <p>
+                KDB FAST FOOD
+            </p>
+
+            <h2>
+                OUR <span>MENU</span>
+            </h2>
+
+        </div>
+
+
+        <div class="section-description">
+
+            Fresh food.
+            Big taste.
+            Great price.
+
+        </div>
+
+    </div>
+
+
+
+    <div
+        class="menu-grid"
+        id="menuContainer"
+    >
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+
+    <div class="about-logo">
+
+        <img
+            src="kdb-logo.png"
+            alt="KDB Fast Food"
+        >
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT KDB
+        </p>
+
+
+        <h2>
+            TASTY FOOD.
+            <span>
+                HAPPY CUSTOMERS.
+            </span>
+        </h2>
+
+
+        <p>
+
+            At KDB Fast Food, we believe good food
+            should be fresh, tasty and affordable.
+
+            Every order is prepared with care so you
+            get the taste you love.
+
+        </p>
+
+
+        <div class="about-points">
+
+            <div>
+                ✓ Fresh Ingredients
+            </div>
+
+            <div>
+                ✓ Hygienic Preparation
+            </div>
+
+            <div>
+                ✓ Fast Service
+            </div>
+
+            <div>
+                ✓ Affordable Prices
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+    class="contact-section"
+    id="contact"
+>
+
+
+    <p class="section-label">
+        COME & VISIT
+    </p>
+
+
+    <h2>
+        KDB FAST FOOD
+    </h2>
+
+
+    <p>
+        📍 Shadipur, Pandav Nagar
+    </p>
+
+
+    <div class="contact-buttons">
+
+        <a
+            href="tel:+919990649590"
+        >
+            📞 Call
+        </a>
+
+
+        <a
+            href="https://wa.me/919990649590"
+            target="_blank"
+        >
+            💬 WhatsApp
+        </a>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     CART DRAWER
+===================================================== -->
+
+<div
+    class="overlay"
+    id="overlay"
+    onclick="closeCart()"
+></div>
+
+
+<aside
+    class="cart-drawer"
+    id="cartDrawer"
+>
+
+
+    <div class="cart-header">
+
+        <div>
+
+            <small>
+                KDB FAST FOOD
+            </small>
+
+            <h2>
+                YOUR CART
+            </h2>
+
+        </div>
+
+
+        <button
+            onclick="closeCart()"
+            class="close-btn"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div
+        class="cart-items"
+        id="cartItems"
+    >
+
+    </div>
+
+
+    <div class="cart-empty" id="cartEmpty">
+
+        🛒
+
+        <h3>
+            Your cart is empty
+        </h3>
+
+        <p>
+            Add something delicious!
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+
+        <div class="total-row">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            onclick="openCheckout()"
+        >
+
+            PROCEED TO ORDER →
+
+        </button>
+
+    </div>
+
+
+</aside>
+
+
+
+<!-- =====================================================
+     CHECKOUT MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="checkoutModal"
+>
+
+
+    <div class="modal-box">
+
+
+        <button
+            class="modal-close"
+            onclick="closeCheckout()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-title">
+
+            <p>
+                KDB FAST FOOD
+            </p>
+
+            <h2>
+                YOUR DETAILS
+            </h2>
+
+            <span>
+                Where should we deliver your food?
+            </span>
+
+        </div>
+
+
+        <form
+            id="customerForm"
+        >
+
+
+            <div class="input-group">
+
+                <label>
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Mobile Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="10 digit mobile number"
+                    maxlength="10"
+                    required
+                >
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Enter your complete address"
+                    required
+                ></textarea>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label>
+                    Special Instructions
+                </label>
+
+                <textarea
+                    id="customerNote"
+                    placeholder="Less spicy, extra sauce etc. (optional)"
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="checkout-btn"
+            >
+
+                CONTINUE TO PAYMENT →
+
+            </button>
+
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     PAYMENT MODAL
+===================================================== -->
+
+<div
+    class="modal"
+    id="paymentModal"
+>
+
+
+    <div class="modal-box payment-box">
+
+
+        <button
+            class="modal-close"
+            onclick="closePayment()"
+        >
+            ×
+        </button>
+
+
+        <div class="modal-title">
+
+            <p>
+                KDB FAST FOOD
+            </p>
+
+            <h2>
+                PAYMENT
+            </h2>
+
+            <span>
+                Choose your payment method
+            </span>
+
+        </div>
+
+
+        <div class="pay-total">
+
+            <small>
+                ORDER TOTAL
+            </small>
+
+            <strong id="paymentTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+
+        <div class="payment-options">
+
+
+            <button
+                class="payment-option"
+                onclick="selectPayment('cod')"
+            >
+
+                <span class="payment-icon">
+                    💵
+                </span>
+
+                <div>
+
+                    <strong>
+                        Cash on Delivery
+                    </strong>
+
+                    <small>
+                        Pay when your food arrives
+                    </small>
+
+                </div>
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+
+            <button
+                class="payment-option"
+                onclick="selectPayment('upi')"
+            >
+
+                <span class="payment-icon">
+                    📱
+                </span>
+
+                <div>
+
+                    <strong>
+                        UPI Payment
+                    </strong>
+
+                    <small>
+                        Scan QR and pay
+                    </small>
+
+                </div>
+
+                <span>
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- UPI AREA -->
+
+        <div
+            class="upi-area"
+            id="upiArea"
+        >
+
+            <h3>
+                Scan & Pay
+            </h3>
+
+            <p>
+                Pay exactly
+                <strong id="upiAmount">
+                    ₹0
+                </strong>
+            </p>
+
+
+            <div
+                id="qrcode"
+                class="qrcode"
+            ></div>
+
+
+            <p class="upi-note">
+
+                After payment, click
+                "Send Order on WhatsApp".
+
+            </p>
+
+
+            <button
+                class="whatsapp-btn"
+                onclick="sendWhatsAppOrder()"
+            >
+
+                💬 SEND ORDER ON WHATSAPP
+
+            </button>
+
+        </div>
+
+
+
+        <!-- COD AREA -->
+
+        <div
+            class="cod-area"
+            id="codArea"
+        >
+
+            <div class="cod-icon">
+                💵
+            </div>
+
+
+            <h3>
+                Cash on Delivery
+            </h3>
+
+
+            <p>
+                Pay cash when your order
+                is delivered.
+            </p>
+
+
+            <button
+                class="whatsapp-btn"
+                onclick="sendWhatsAppOrder()"
+            >
+
+                💬 CONFIRM ORDER ON WHATSAPP
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        <img
+            src="kdb-logo.png"
+            alt="KDB"
+        >
+
+        <div>
+
+            <strong>
+                KDB FAST FOOD
+            </strong>
+
+            <span>
+                Real Taste • Fresh Food • Always
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <p>
+        © 2026 KDB Fast Food. All Rights Reserved.
+    </p>
+
+
+    <p>
+        📍 Shadipur, Pandav Nagar
+    </p>
+
+
+</footer>
+
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
